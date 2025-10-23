@@ -10,7 +10,6 @@ Dự án này trình bày một giải pháp toàn diện về **xây dựng kho
 ## 🏗️ Kiến trúc Dữ liệu (Data Architecture)
 
 Dự án áp dụng mô hình **Medallion Architecture** với 3 lớp dữ liệu: **Bronze**, **Silver**, và **Gold**.
-![Data Architecture](docs/data_architecture.png)
 
 1. **Bronze Layer**: Lưu trữ dữ liệu gốc (raw data) từ các hệ thống nguồn. Dữ liệu được nạp từ các tệp CSV vào cơ sở dữ liệu SQL Server.
 2. **Silver Layer**: Bao gồm các bước làm sạch, chuẩn hóa và chuyển đổi dữ liệu để chuẩn bị cho việc phân tích.
